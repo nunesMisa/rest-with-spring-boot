@@ -1,0 +1,46 @@
+version: '3.4'
+services:
+  db:
+    image: nunesmisa/postgres-rest-with-spring-boot
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile_db
+    environment:
+      - PGDATA=/var/lib/postgresql/data/pgdata
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=LIVRARIA_V1
+    ports:
+      - 5432:5432
+    networks:
+      - nunesmisa-network
+  rest-with-spring-boot:
+    image: nunesmisa/rest-with-spring-boot
+    restart: always
+    build: 
+      context: .
+      dockerfile: Dockerfile_project
+    working_dir: /rest-with-spring-boot
+    environment:
+      TZ: America/Sao_Paulo
+      SPRING_BOOT_ENVIRONMENT: Production
+    volumes:
+      - type: bind
+        source: .
+        target: /rest-with-spring-boot
+      - type: bind
+        source: ~/.m2
+        target: /root/.m2
+    ports:
+      - "8080:8080"
+    command: mvn clean spring-boot:run
+    links:
+      - db
+    depends_on:
+      - db
+    networks:
+      - nunesmisa-network
+networks:
+  nunesmisa-network:
+    driver: bridge
