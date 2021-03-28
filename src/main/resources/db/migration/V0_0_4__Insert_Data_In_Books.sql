@@ -1,0 +1,15 @@
+INSERT INTO books (author, launch_date, price, title) VALUES ('Michael C. Feathers', '2017-11-29 13:50:05.878000', 49.00, 'Working effectively with legacy code');
+INSERT INTO books (author, launch_date, price, title) VALUES ('Ralph Johnson, Erich Gamma, John Vlissides e Richard Helm', '2017-11-29 15:15:13.636000', 45.00, 'Design Patterns');
+INSERT INTO books (author, launch_date, price, title) VALUES ('Robert C. Martin', '2009-01-10 00:00:00.000000', 77.00, 'Clean Code');
+INSERT INTO books (author, launch_date, price, title) VALUES ('Crockford', '2017-11-07 15:09:01.674000', 67.00, 'JavaScript');
+INSERT INTO books (author, launch_date, price, title) VALUES ('Steve McConnell', '2017-11-07 15:09:01.674000', 58.00, 'Code complete');
+INSERT INTO books (author, launch_date, price, title) VALUES ('Martin Fowler e Kent Beck', '2017-11-07 15:09:01.674000', 88.00, 'Refactoring');
+INSERT INTO books (author, launch_date, price, title) VALUES ('Eric Freeman, Elisabeth Freeman, Kathy Sierra, Bert Bates', '2017-11-07 15:09:01.674000', 110.00, 'Head First Design Patterns');
+INSERT INTO books (author, launch_date, price, title) VALUES ('Eric Evans', '2017-11-07 15:09:01.674000', 92.00, 'Domain Driven Design');
+INSERT INTO books (author, launch_date, price, title) VALUES ('Brian Goetz e Tim Peierls', '2017-11-07 15:09:01.674000', 80.00, 'Java Concurrency in Practice');
+INSERT INTO books (author, launch_date, price, title) VALUES ('Susan Cain', '2017-11-07 15:09:01.674000', 123.00, 'O poder dos quietos');
+INSERT INTO books (author, launch_date, price, title) VALUES ('Roger S. Pressman', '2017-11-07 15:09:01.674000', 56.00, 'Engenharia de Software: uma abordagem profissional');
+INSERT INTO books (author, launch_date, price, title) VALUES ('Viktor Mayer-Schonberger e Kenneth Kukier', '2017-11-07 15:09:01.674000', 54.00, 'Big Data: como extrair volume, variedade, velocidade e valor da avalanche de informação cotidiana');
+INSERT INTO books (author, launch_date, price, title) VALUES ('Richard Hunter e George Westerman', '2017-11-07 15:09:01.674000', 95.00, 'O verdadeiro valor de TI');
+INSERT INTO books (author, launch_date, price, title) VALUES ('Marc J. Schiller', '2017-11-07 15:09:01.674000', 45.00, 'Os 11 segredos de líderes de TI altamente influentes');
+INSERT INTO books (author, launch_date, price, title) VALUES ('Aguinaldo Aragon Fernandes e Vladimir Ferraz de Abreu', '2017-11-07 15:09:01.674000', 54.00, 'Implantando a governança de TI');
